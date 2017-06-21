@@ -7,20 +7,7 @@ git_user_id=$1
 git_repo_id=$2
 release_note=$3
 
-if [ "$git_user_id" = "" ]; then
-    git_user_id=""
-    echo "[INFO] No command line input provided. Set \$git_user_id to $git_user_id"
-fi
 
-if [ "$git_repo_id" = "" ]; then
-    git_repo_id=""
-    echo "[INFO] No command line input provided. Set \$git_repo_id to $git_repo_id"
-fi
-
-if [ "$release_note" = "" ]; then
-    release_note=""
-    echo "[INFO] No command line input provided. Set \$release_note to $release_note"
-fi
 
 # Initialize the local directory as a Git repository
 git init
@@ -48,5 +35,5 @@ git pull origin master
 
 # Pushes (Forces) the changes in the local repository up to the remote repository
 echo "Git pushing to https://github.com/${git_user_id}/${git_repo_id}.git"
-git push origin master 2>&1 | grep -v 'To https'
+git push origin master
 
