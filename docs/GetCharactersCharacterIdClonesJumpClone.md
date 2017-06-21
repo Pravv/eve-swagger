@@ -1,0 +1,21 @@
+# EveSwaggerInterface.GetCharactersCharacterIdClonesJumpClone
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**implants** | **[Number]** | implants array | [optional] 
+**locationId** | **Number** | location_id integer | [optional] 
+**locationType** | **String** | location_type string | [optional] 
+
+
+<a name="LocationTypeEnum"></a>
+## Enum: LocationTypeEnum
+
+
+* `station` (value: `"station"`)
+
+* `structure` (value: `"structure"`)
+
+
+
+
